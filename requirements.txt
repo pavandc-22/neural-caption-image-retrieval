@@ -1,0 +1,8 @@
+torch>=2.0
+torchvision>=0.15
+numpy
+matplotlib
+Pillow
+tqdm
+requests
+gradio        # optional: only for the live web demo (demo.py --gradio)

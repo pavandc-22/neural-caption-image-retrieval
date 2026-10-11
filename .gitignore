@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+# large artefacts - regenerate with the scripts in README
+data/
+features/
+checkpoints/
+*.npy
+*.pt
+*.pth
+*.zip
