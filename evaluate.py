@@ -7,6 +7,7 @@ import glob
 import json
 import os
 
+
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
@@ -25,6 +26,7 @@ def avg_glove(token_lists, vocab, mat):
         ids = [j for j in vocab.encode(t) if j > 1] or [1]
         out[i] = mat[ids].mean(0)
     return out
+
 
 
 def length_curve(ranks, lengths, k=10, min_n=30):
@@ -100,6 +102,6 @@ def main():
     plt.savefig("results/training_curves.png", dpi=200); plt.close()
     print("saved results/results.{json,md}, r10_vs_length.png, training_curves.png")
 
-
+# image to vgg to embedding 
 if __name__ == "__main__":
     main()
